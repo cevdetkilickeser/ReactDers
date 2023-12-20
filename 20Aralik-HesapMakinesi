@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Sayi1</label>
+        <input type="text" id="sayi1">
+    </div>
+    <div>
+        <label for="">Sayi2</label>
+        <input type="text" id="sayi2">
+    </div>
+    
+    <div>
+        <button onclick="topla()">Topla</button>
+    </div>
+    <div>
+        <button onclick="cikar()">Cikar</button>
+    </div>
+    <div>
+        <button onclick="carp()">Carp</button>
+    </div>
+    <div>
+        <button onclick="bol()">Bol</button>
+    </div>
+    <hr>
+    <div>
+        <ul>
+
+        </ul>
+    </div>
+
+</body>
+<script>
+    function topla(){
+        document.querySelector("ul").innerHTML = "";
+
+        var sayi1 = document.getElementById("sayi1").value
+        var sayi2 = document.getElementById("sayi2").value
+
+        var liElement = document.createElement("li")
+        liElement.innerHTML = Number(sayi1) + Number(sayi2)
+
+        document.querySelector("ul").appendChild(liElement)
+
+    }
+
+    function cikar(){
+        document.querySelector("ul").innerHTML = "";
+
+        var sayi1 = document.getElementById("sayi1").value
+        var sayi2 = document.getElementById("sayi2").value
+
+        var liElement = document.createElement("li")
+        liElement.innerHTML = Number(sayi1) - Number(sayi2)
+
+        document.querySelector("ul").appendChild(liElement)
+
+    }
+
+    function carp(){
+        document.querySelector("ul").innerHTML = "";
+
+        var sayi1 = document.getElementById("sayi1").value
+        var sayi2 = document.getElementById("sayi2").value
+
+        var liElement = document.createElement("li")
+        liElement.innerHTML = Number(sayi1) * Number(sayi2)
+
+        document.querySelector("ul").appendChild(liElement)
+
+    }
+
+    function bol(){
+        document.querySelector("ul").innerHTML = "";
+
+        var sayi1 = document.getElementById("sayi1").value
+        var sayi2 = document.getElementById("sayi2").value
+
+        var liElement = document.createElement("li")
+        liElement.innerHTML = Number(sayi1) / Number(sayi2)
+
+        document.querySelector("ul").appendChild(liElement)
+
+    }
+
+
+</script>
+</html>
