@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Price</label>
+        <input type="text" id="price">
+    </div>
+    
+    <div>
+        <button onclick="calculatePriceWithTax()">CalculatePriceWithTax</button>
+    </div>
+    <hr>
+    <div>
+        <ul>
+
+        </ul>
+    </div>
+
+</body>
+<script>
+    function calculatePriceWithTax(){
+        var calculatedPrice = document.getElementById("price").value
+        var liElement = document.createElement("li")
+        liElement.innerHTML = Number(calculatedPrice) * 1.8
+
+        document.querySelector("ul").appendChild(liElement)
+
+    }
+
+
+</script>
+</html>
