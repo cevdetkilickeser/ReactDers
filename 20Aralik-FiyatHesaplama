@@ -24,9 +24,11 @@
 </body>
 <script>
     function calculatePriceWithTax(){
-        var calculatedPrice = document.getElementById("price").value
+        document.querySelector("ul").innerHTML = "";
+        
+        var inputPrice = document.getElementById("price").value
         var liElement = document.createElement("li")
-        liElement.innerHTML = Number(calculatedPrice) * 1.8
+        liElement.innerHTML = parseFloat(inputPrice) * 1.8
 
         document.querySelector("ul").appendChild(liElement)
 
