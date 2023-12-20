@@ -979,7 +979,7 @@
     var filteredProducts3 = products.filter(item => item.unitPrice > 100 && item.unitPrice < 200)
     var filteredProducts4 = products.filter(item => item.unitPrice < 20)
     var filteredProducts5 = products.filter(item => item.name.startsWith("a"))
-    var filteredProducts6 = products.filter(item => item.name.includes("x"))
+    var filteredProducts6 = products.filter(item => item.name..toLowerCase().includes("x"))
     console.log(filteredProducts1)
     console.log(filteredProducts2)
     console.log(filteredProduct3)
