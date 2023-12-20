@@ -43,7 +43,7 @@
         var sayi2 = document.getElementById("sayi2").value
 
         var liElement = document.createElement("li")
-        liElement.innerHTML = Number(sayi1) + Number(sayi2)
+        liElement.innerHTML = parseFloat(sayi1) + parseFloat(sayi2)
 
         document.querySelector("ul").appendChild(liElement)
 
@@ -56,7 +56,7 @@
         var sayi2 = document.getElementById("sayi2").value
 
         var liElement = document.createElement("li")
-        liElement.innerHTML = Number(sayi1) - Number(sayi2)
+        liElement.innerHTML = parseFloat(sayi1) - parseFloat(sayi2)
 
         document.querySelector("ul").appendChild(liElement)
 
@@ -69,7 +69,7 @@
         var sayi2 = document.getElementById("sayi2").value
 
         var liElement = document.createElement("li")
-        liElement.innerHTML = Number(sayi1) * Number(sayi2)
+        liElement.innerHTML = parseFloat(sayi1) * parseFloat(sayi2)
 
         document.querySelector("ul").appendChild(liElement)
 
@@ -82,7 +82,7 @@
         var sayi2 = document.getElementById("sayi2").value
 
         var liElement = document.createElement("li")
-        liElement.innerHTML = Number(sayi1) / Number(sayi2)
+        liElement.innerHTML = parseFloat(sayi1) / parseFloat(sayi2)
 
         document.querySelector("ul").appendChild(liElement)
 
